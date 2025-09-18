@@ -1,0 +1,147 @@
+
+.title {
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.16));
+}
+
+.fa-user {
+    font-size: 100px;
+}
+
+.black-bar {
+    width: 10px;
+    height: 75%;
+    position: absolute;
+    margin-top: -20px;
+    background-color: #363636;
+}
+
+.card {
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family:'Courier New', Courier, monospace;
+
+    color: #363636;
+    background-color: #fafafa;
+    border: 1px solid #363636;
+}
+
+.bottom-card-bar {
+    width: 100%;
+    left: -0px;
+    bottom: -0px;
+    position: absolute;
+    height: 8px;
+    background-color: #363636;
+}
+
+
+.card:hover {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.16);
+}
+
+.card-left-pane {
+    /*border-right: 1px solid #363636;  */ 
+    width: 200px; 
+    text-align: center;
+    padding: 2px;
+}
+
+
+.large-decorative-circle {
+    position: absolute;
+    border: 5px dashed #363636;
+    left: -50px;
+    bottom: -50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.small-decorative-circle {
+    position: absolute;
+    border: 5px dashed #363636;
+    left: -50px;
+    bottom: -50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    /* animation properties */
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.card-right-pane li {
+    list-style-type: none;
+    color:#343333;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    text-align: left;
+}
+
+.card-right-pane li:hover {
+    color:#ed4747;
+}
+
+.name-details {
+    text-align: center;
+}
+
+.name-details p {
+    display: inline;
+}
+
+.card-footer {
+    text-align: center;
+    font-size: 10px
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Starting rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Ending rotation */
+    }
+}
+
+@keyframes rotate-reverse {
+    0% {
+        transform: rotate(0deg); /* Starting rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Ending rotation */
+    }
+}
+
+.media-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
